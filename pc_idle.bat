@@ -1,1 +1,0 @@
-E:\Nextcloud\Projects\Python\HomeAssistant\pc_idle\pc_idle.py

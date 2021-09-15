@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "hass-pc-idle"
+version = "0.1.0"
+description = ""
+authors = ["arition <aritionkb@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pywin32 = "^301"
+PyYAML = "^5.4.1"
+aiohttp = {extras = ["speedups"], version = "^3.7.4"}
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
