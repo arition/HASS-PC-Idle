@@ -22,11 +22,14 @@ async def trigger(action):
 
     async with aiohttp.ClientSession(headers=headers) as session:
         for entity_id in config['home_assistant_booleans']:
-            url = f"{config['endpoint_url']}/services/input_boolean/{action}"
-            data = {"entity_id": "input_boolean.{}".format(entity_id)}
-            response = await session.post(url, json=data)
-            await response.text()
-            response.close()
+            try:
+                url = f"{config['endpoint_url']}/services/input_boolean/{action}"
+                data = {"entity_id": "input_boolean.{}".format(entity_id)}
+                response = await session.post(url, json=data)
+                await response.text()
+                response.close()
+            except Exception as e:
+                print(e)
 
 
 async def main():
