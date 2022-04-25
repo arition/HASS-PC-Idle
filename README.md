@@ -13,7 +13,7 @@ RSSI.
 
 Currently only Windows is supported, ~~Linux support will come some day~~.
 
-1. If you don't have it yet, download Python 3.x from python.org and install it.
+1. If you don't have it yet, download Python 3.10 from python.org and install it.
 2. Install `poetry` from <https://python-poetry.org/>
 3. Install dependencies with `poetry install`
 4. Open config.yaml and enter your HomeAssistant API URL. Could be an IP or a domain name.

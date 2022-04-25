@@ -5,8 +5,8 @@ description = ""
 authors = ["arition <aritionkb@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-pywin32 = "^301"
+python = "^3.10"
+pywin32 = "^303"
 PyYAML = "^5.4.1"
 aiohttp = {extras = ["speedups"], version = "^3.7.4"}
 
