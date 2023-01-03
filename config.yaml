@@ -4,3 +4,5 @@ endpoint_url: http://yourip:8123/api
 token: yourtoken
 home_assistant_booleans:
   - pc_idle
+home_assistant_start_booleans:
+  - pc_start

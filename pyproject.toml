@@ -13,6 +13,27 @@ aiohttp = {extras = ["speedups"], version = "^3.7.4"}
 [tool.poetry.dev-dependencies]
 autopep8 = "^1.5.7"
 
+
+[tool.pdm]
+includes = []
+[tool.pdm.dev-dependencies]
+dev = [
+    "autopep8<2.0.0,>=1.5.7",
+]
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
+
+[project]
+name = "hass-pc-idle"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "arition", email = "aritionkb@gmail.com"},
+    {name = "arition",email = "aritionkb@gmail.com"}
+]
+dependencies = ["pywin32>=303", "PyYAML<6.0.0,>=5.4.1", "aiohttp[speedups]<4.0.0,>=3.7.4"]
+requires-python = ">=3.7,<4.0"
+license = {text = "MIT"}
+
+[project.urls]
